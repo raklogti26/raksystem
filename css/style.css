@@ -1,47 +1,53 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f5f7;
+    font-family: Arial;
+    background: #0d0d0d;
+    color: #ddd;
     display: flex;
 }
 
 /* SIDEBAR */
 .sidebar {
     width: 230px;
-    background: #e9ecef;
+    background: #111111;
     height: 100vh;
     padding: 20px;
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #222;
 }
 
 .sidebar h2 {
     color: #FF9E18;
+    margin-bottom: 20px;
 }
 
 .sidebar a {
     display: block;
     padding: 12px;
     margin: 5px 0;
-    color: #333;
+    color: #bbb;
     text-decoration: none;
     border-radius: 8px;
+    transition: 0.2s;
 }
 
+/* destaque ativo */
 .sidebar a:hover {
-    background: #dcdcdc;
+    background: #222;
     color: #FF9E18;
 }
 
 /* MAIN */
 .main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 /* TOPO */
 .topbar {
     padding: 15px;
-    background: #ffffff;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #222;
+    background: #0f0f0f;
 }
 
 /* INPUT */
@@ -49,60 +55,36 @@ body {
     width: 300px;
     padding: 10px;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: none;
+    background: #1a1a1a;
+    color: white;
 }
 
 /* CONTEÚDO */
 .content {
-    padding: 25px;
-}
-
-/* TÍTULO */
-.titulo {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    border-left: 6px solid #FF9E18;
-    padding-left: 10px;
-}
-
-/* CARD GRANDE */
-.card-info {
-    background: white;
     padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
 }
 
-/* GRID */
-.grid {
-    display: flex;
-    gap: 20px;
-}
-
-/* CARDS PEQUENOS */
+/* CARDS */
 .card {
-    background: white;
+    background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ddd;
-    flex: 1;
-}
-
-/* DESTAQUE */
-.valor {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #222;
 }
 
 /* BOTÕES */
 button {
     background: #FF9E18;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 8px;
+    color: black;
+    font-weight: bold;
     cursor: pointer;
 }
-``
+
+button:hover {
+    background: #e68900;
+}
