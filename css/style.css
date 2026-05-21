@@ -1,21 +1,22 @@
-
 body {
     margin: 0;
     font-family: Arial;
-    background: #0f1220;
+    background: #0d0d0d;
     color: #ddd;
     display: flex;
 }
 
-/* MENU */
+/* SIDEBAR */
 .sidebar {
-    width: 240px;
-    background: #151829;
+    width: 230px;
+    background: #111111;
     height: 100vh;
     padding: 20px;
+    border-right: 1px solid #222;
 }
 
 .sidebar h2 {
+    color: #FF9E18;
     margin-bottom: 20px;
 }
 
@@ -23,13 +24,16 @@ body {
     display: block;
     padding: 12px;
     margin: 5px 0;
-    color: #ccc;
+    color: #bbb;
     text-decoration: none;
     border-radius: 8px;
+    transition: 0.2s;
 }
 
+/* destaque ativo */
 .sidebar a:hover {
-    background: #1f2338;
+    background: #222;
+    color: #FF9E18;
 }
 
 /* MAIN */
@@ -39,42 +43,48 @@ body {
     flex-direction: column;
 }
 
+/* TOPO */
 .topbar {
     padding: 15px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #222;
+    background: #0f0f0f;
 }
 
+/* INPUT */
 .topbar input {
     width: 300px;
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background: #1a1d2e;
+    background: #1a1a1a;
     color: white;
 }
 
+/* CONTEÚDO */
 .content {
     padding: 20px;
 }
 
 /* CARDS */
 .card {
-    background: #1a1d2e;
+    background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 1px solid #222;
 }
 
 /* BOTÕES */
 button {
-    background: #00d1b2;
+    background: #FF9E18;
     border: none;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 8px;
     color: black;
+    font-weight: bold;
     cursor: pointer;
 }
 
 button:hover {
-    background: #00a896;
+    background: #e68900;
 }
